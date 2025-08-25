@@ -15,7 +15,7 @@
 <br>@pubmukmuk
 <br>@MikeMMattinson
 
-<img width="749" height="575" alt="image" src="https://github.com/user-attachments/assets/61d5c280-04ee-4532-bdad-b4ad8434b48f" />
+![Main Menu Preview](main-menu.png)
 
 
 ## 🚀 Features
