@@ -1,5 +1,13 @@
 # 📸 FamilyFoto CLI Toolkit
 
+**RELEASE NOTE** There are two important data files that should be created in the installation's data/ folder:
+    1. photos.db - sqlite3 database, running the code will initialize the required table
+    2. streets.csv - a simple .csv to track streets used when using the application
+    
+      "street","city_id","city","state","street_code"
+      Lakewood Lane,1840015962,Titusville,Florida,LAKETI
+    
+
 **FamilyFoto** is a modular, scriptable command-line pipeline for organizing, renaming, tagging, and archiving family photos and videos. It supports metadata extraction, GPS reverse geocoding, duplicate detection, and flexible folder structures — ideal for large-scale personal or historical media libraries.
 
 <br>Latest release: v0.6.0
