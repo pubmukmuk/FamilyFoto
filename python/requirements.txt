@@ -1,0 +1,40 @@
+# ========================
+# Image and EXIF Handling
+# ========================
+Pillow>=10.3.0             # Image loading and basic processing
+piexif>=1.1.3              # Read/write EXIF metadata (for GPS, timestamp)
+ExifRead>=3.0.0            # Optional EXIF reader for legacy formats
+
+# ========================
+# Video Metadata & Hashing
+# ========================
+hachoir>=3.3.0             # For reading metadata from video/audio files
+
+# ========================
+# Geolocation and Reverse Geocoding
+# ========================
+geopy>=2.4.1               # Reverse geocoding using OpenStreetMap/Nominatim
+geographiclib>=2.0         # Used internally by geopy
+
+# ========================
+# Console Output & CLI UX
+# ========================
+rich>=13.7.0               # Beautiful CLI progress bars and formatting
+
+# ========================
+# Filename and String Utilities
+# ========================
+python-slugify>=8.0.4      # Safe and unique filenames
+text-unidecode>=1.3        # Required by slugify
+
+# ========================
+# Optional Future Enhancements
+# ========================
+markdown2>=2.4.12          # Convert Markdown to text/HTML
+filetype>=1.2.0            # Guess file types by content
+
+# ========================
+# Core Utilities
+# ========================
+requests>=2.31.0           # For any fallback geocoding APIs
+python-dateutil>=2.9.0     # Robust date/time parsing

@@ -1,0 +1,128 @@
+
+📘 Repository: devmukmuk/FamilyFoto
+
+🔍 Status Filter: All
+
+📌 Epic Overview (All Issues)
+  Epic:FinalPolish
+    [ ] # 50  Cleanup unused scripts and temp files    (SP:2)
+    [ ] # 51  Write README, usage docs, versions.csv   (SP:3)
+    [ ] # 52  Run final integration tests              (SP:3)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:GUIWrapper
+    [ ] # 47  Design optional GUI around fffcli.py     (SP:5)
+    [ ] # 48  Provide family-friendly access to view or rename photos (SP:5)
+    [ ] # 49  Enable tagging and basic search from GUI (SP:3)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 13  0%)
+
+  Epic:SecureStorage
+    [ ] # 44  Organize backups of originals            (SP:3)
+    [ ] # 45  Validate integrity using hash check      (SP:3)
+    [ ] # 46  Support sync/archive to external drive or cloud (SP:3)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 9  0%)
+
+  Epic:Dashboard
+    [ ] # 41  Build CLI dashboard to view system status (SP:5)
+    [ ] # 42  List photos needing action (GPS/date/tag) (SP:5)
+    [ ] # 43  Allow human-in-the-loop fixes            (SP:3)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 13  0%)
+
+  Epic:FinderCLI
+    [ ] # 38  Implement CLI to search by name, folder, tag, or date (SP:3)
+    [ ] # 39  Use rich output to preview results       (SP:3)
+    [ ] # 40  Support fuzzy matching and filters       (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:PhotoTagging
+    [ ] # 35  Add CLI support for tagging files or folders (SP:3)
+    [ ] # 36  Store tags in metadata or sidecar file   (SP:3)
+    [ ] # 37  Support tag-based queries later          (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:SummarizeCollection
+    [ ] # 32  Generate summary.csv grouped by year, camera, and type (SP:3)
+    [ ] # 33  Include stats for visual QA              (SP:2)
+    [ ] # 34  Run summary via CLI or cron job          (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 7  0%)
+
+  Epic:DuplicateDetection
+    [ ] # 29  Generate SHA256 hash of photo files      (SP:3)
+    [ ] # 30  Detect and record duplicates in duplicates.txt (SP:3)
+    [ ] # 31  Skip or reference duplicate entries      (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:OrganizeFolders
+    [ ] # 26  Move files to folders based on year and location (SP:3)
+    [ ] # 27  Support folder structures: Flat, Hybrid, Location-first (SP:3)
+    [ ] # 28  Preserve originals in optional backup folder (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:Filenaming
+    [ ] # 23  Generate filenames using config template (SP:3)
+    [ ] # 24  Support multiple formats (ISO, Compact, Narrative) (SP:3)
+    [ ] # 25  Integrate GEOCODE and timestamps into filenames (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:Geolocation
+    [ ] # 20  Perform reverse geocoding using geopy    (SP:5)
+    [ ] # 21  Generate city and street codes           (SP:5)
+    [ ] # 22  Cache results and update coordinates.csv (SP:3)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 13  0%)
+
+  Epic:ExtractMetadata
+    [ ] # 17  Extract DateTimeOriginal, CameraModel, GPS (SP:3)
+    [ ] # 18  Write metadata to coordinates.csv        (SP:3)
+    [ ] # 19  Add UUID and hash to each photo          (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:ConvertMedia
+    [X] # 14  Convert HEIC to JPG using pyheif or pillow-heif (SP:3)
+    [ ] # 15  Maintain original timestamps             (SP:2)
+    [ ] # 16  Log all conversion results               (SP:1)
+    ISSUES: (1 / 3  33%)
+    SP:     (3 / 6  50%)
+
+  Epic:ImportPhotos
+    [ ] # 11  Support import from GPS-enabled devices  (SP:3)
+    [ ] # 12  Support import from scans and old cameras (SP:3)
+    [ ] # 13  Preserve original folder structure on copy (SP:2)
+    ISSUES: (0 / 3  0%)
+    SP:     (0 / 8  0%)
+
+  Epic:ConfigSystem
+    [X] #  8  Create photo.config and environment file support (SP:3)
+    [X] #  9  Define default input/output/temp/log folders (SP:3)
+    [X] # 10  Load configuration at runtime and expose via config_utils (SP:3)
+    ISSUES: (3 / 3  100%)
+    SP:     (9 / 9  100%)
+
+  Epic: ConfigSystem
+    [X] #  1  data: create location sqlite3 photos.db  (SP:8)
+    ISSUES: (1 / 1  100%)
+    SP:     (8 / 8  100%)
+
+  No Epic
+    [ ] #  2  Create fffcli.py entry script            (SP:3)
+    [ ] #  3  Create build-exe.py for PyInstaller      (SP:3)
+    [ ] #  4  Auto-update README.txt and USAGE.txt     (SP:2)
+    [ ] #  5  Auto-update README.md and USAGE.md       (SP:2)
+    [ ] #  6  Auto-update VERSIONS.csv on release      (SP:2)
+    [ ] #  7  Test CLI help and version flags          (SP:1)
+    ISSUES: (0 / 6  0%)
+    SP:     (0 / 13  0%)
+
+🔢 TOTAL ISSUES: (5 / 52  9%)
+📈 TOTAL SP:     (20 / 155  12%)

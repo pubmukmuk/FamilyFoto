@@ -1,0 +1,40 @@
+
+📘 Repository: devmukmuk/FamilyFoto
+
+🔍 Status Filter: All
+
+🎯 Milestones
+v0.06.0 - 2025W35 [open]  (10 / 10  100%) — Due: 2025-08-25
+  Epic: SummarizeCollection
+    Assigned: devmukmuk
+      [X] # 32  Generate summary.csv grouped by year, camera, and type (SP:3)
+      SP: (3 / 3 100%)
+  Epic: FotoMover
+    Assigned: devmukmuk
+      [X] # 26  Move files to folders based on year and location (SP:3)
+      SP: (3 / 3 100%)
+  Epic: Geolocation
+    Assigned: devmukmuk
+      [X] # 20  Perform reverse geocoding using geopy    (SP:5)
+      [X] # 21  Generate city and street codes           (SP:5)
+      SP: (10 / 10 100%)
+  Epic: ConvertMedia
+    Assigned: devmukmuk
+      [X] # 14  Convert HEIC to JPG using pyheif or pillow-heif (SP:3)
+      SP: (3 / 3 100%)
+  Epic: ImportPhotos
+    Assigned: devmukmuk
+      [X] # 11  Support import from GPS-enabled devices  (SP:3)
+      SP: (3 / 3 100%)
+  Epic: ConfigSystem
+    Assigned: devmukmuk
+      [X] #  8  Create photo.config and environment file support (SP:3)
+      [X] #  9  Define default input/output/temp/log folders (SP:3)
+      [X] # 10  Load configuration at runtime and expose via config_utils (SP:3)
+      SP: (9 / 9 100%)
+  No Epic
+    Assigned: devmukmuk
+      [X] #  1  data: create location sqlite3 photos.db  (SP:8)
+      SP: (8 / 8 100%)
+    Total SP: (39 / 39 100%)
+

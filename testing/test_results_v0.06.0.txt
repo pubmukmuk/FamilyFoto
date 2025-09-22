@@ -1,0 +1,42 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-8.4.1, pluggy-1.6.0 -- P:\dev.mukmuk\FamilyFoto\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: P:\dev.mukmuk\FamilyFoto
+collecting ... collected 5 items
+
+tests/test_datetime.py::test_datetime_extraction FAILED                  [ 20%]
+tests/test_gps.py::test_gps_extraction_sample1 FAILED                    [ 40%]
+tests/test_gps.py::test_gps_extraction_known PASSED                      [ 60%]
+tests/test_reverse_geocode.py::test_reverse_geocode PASSED               [ 80%]
+tests/test_reverse_geocode.py::test_generate_geocode PASSED              [100%]
+
+================================== FAILURES ===================================
+__________________________ test_datetime_extraction ___________________________
+
+    def test_datetime_extraction():
+        test_file = Path("inbox/test.JPG")
+        exif = get_exif_data(test_file)
+>       assert exif, f"No EXIF found in {test_file}"
+E       AssertionError: No EXIF found in inbox\test.JPG
+E       assert {}
+
+tests\test_datetime.py:14: AssertionError
+---------------------------- Captured stdout call -----------------------------
+\u274c Error reading EXIF from inbox\\test.JPG: [Errno 2] No such file or directory: 'inbox\\\\test.JPG'
+_________________________ test_gps_extraction_sample1 _________________________
+
+    def test_gps_extraction_sample1():
+        """Test an image that previously failed due to missing or malformed GPS data."""
+        test_file = Path("inbox/test.JPG")
+        gps = get_gps_from_exif(test_file)
+>       assert gps, f"GPS not extracted from {test_file}"
+E       AssertionError: GPS not extracted from inbox\test.JPG
+E       assert None
+
+tests\test_gps.py:8: AssertionError
+---------------------------- Captured stdout call -----------------------------
+\u26a0\ufe0f EXIF GPS extraction failed for inbox\\test.JPG: [Errno 2] No such file or directory: 'inbox\\\\test.JPG'
+=========================== short test summary info ===========================
+FAILED tests/test_datetime.py::test_datetime_extraction - AssertionError: No ...
+FAILED tests/test_gps.py::test_gps_extraction_sample1 - AssertionError: GPS n...
+========================= 2 failed, 3 passed in 6.00s =========================
